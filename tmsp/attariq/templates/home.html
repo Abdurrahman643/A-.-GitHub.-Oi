@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Home - Attariq Academy{% endblock title %}
+
+{% block content %}
+<div class="home-container">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-logo">
+      <img src="{% static 'images/attariq.png' %}" alt="Attariq Logo" class="home-logo">
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to Attariq Academy</h1>
+      <p>Your journey to excellence begins here.</p>
+      <a href="{% url 'student_form' %}" class="btn btn-primary btn-lg">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Comprehensive Islamic and academic education</li>
+      <li>Experienced and caring faculty</li>
+      <li>State-of-the-art facilities</li>
+      <li>Strong community and values</li>
+    </ul>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <h2>Latest News</h2>
+    <p>Stay tuned for upcoming events and announcements.</p>
+  </section>
+
+  <!-- Announcements Section -->
+  <section class="announcements-section">
+    <h2>Announcements</h2>
+    {% include 'announcements_section.html' %}
+  </section>
+</div>
+{% endblock content %}

@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}About Us - Attariq Academy{% endblock title %}
+
+{% block content %}
+<div class="about-container">
+  <h1 class="about-title">Welcome to Attariq Academy</h1>
+  <p class="about-lead">Empowering Students with Excellence in Islamic and Academic Education for a Brighter Future.</p>
+  
+  <section class="mission-section">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="section-text">At Attariq Academy, our mission is to provide a balanced education that combines Islamic values with academic excellence. We aim to nurture well-rounded individuals who are equipped to contribute positively to society.</p>
+  </section>
+
+  <section class="vision-section">
+    <h2 class="section-title">Our Vision</h2>
+    <p class="section-text">We envision a world where education is a bridge to success, fostering a generation of leaders who uphold integrity, compassion, and knowledge.</p>
+  </section>
+
+  <section class="programs-section">
+    <h2 class="section-title">Our Programs</h2>
+    <ul class="programs-list">
+      <li><strong>Nursery and Primary Education:</strong> A strong foundation in academics and Islamic studies.</li>
+      <li><strong>Junior School:</strong> Comprehensive education to prepare students for higher learning.</li>
+      <li><strong>Tahfeez Programs:</strong> Flexible Quran memorization programs available on weekdays, weekends, or both.</li>
+    </ul>
+  </section>
+
+  <section class="testimonials-section">
+    <h2 class="section-title">What Our Students Say</h2>
+    <blockquote class="testimonial">
+      <p>"Attariq Academy has transformed my life. The blend of Islamic and academic education is unparalleled."</p>
+      <footer class="testimonial-footer">- A proud student</footer>
+    </blockquote>
+  </section>
+
+  <div class="cta-container">
+    <a href="{% url 'home' %}" class="cta-button">Discover Our Journey</a>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Enrollment Decision - Attariq Academy{% endblock title %}
+
+{% block content %}
+<div class="enrollment-decision-container animate-on-load" style="max-width: 600px; margin: 2rem auto; padding: 1rem; text-align: center;">
+  <h1 class="animate-on-load">Enrollment Decision</h1>
+  <form method="post">
+    {% csrf_token %}
+    <p>Do you want to proceed with enrollment?</p>
+    <button type="submit" name="decision" value="yes" class="btn btn-success animate-on-load">Yes</button>
+    <button type="submit" name="decision" value="no" class="btn btn-danger animate-on-load">No</button>
+  </form>
+</div>
+{% endblock content %}
